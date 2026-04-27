@@ -644,6 +644,7 @@ const Services = ({ className = '' }) => {
   return (
     <section
       id="services"
+      aria-label="Our Services — IT Consulting, 3D Animation, and Video Production"
       data-noscale={true}
       className={`relative w-full bg-sky-50 ${className}`}
       style={{ paddingBottom: '15vh', fontFamily: "'DM Sans', sans-serif" }}

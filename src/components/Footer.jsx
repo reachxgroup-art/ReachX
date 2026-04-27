@@ -61,7 +61,7 @@ const serviceLinks = [
 /* ════════════════════════════════════════════════════════════ */
 const Footer = ({ className }) => {
   return (
-    <footer className={cn("bg-[#050505] text-white pt-12 md:pt-24 flex flex-col font-sans relative z-10", className)}>
+    <footer aria-label="Site footer" className={cn("bg-[#050505] text-white pt-12 md:pt-24 flex flex-col font-sans relative z-10", className)}>
 
       <style>{`
         .footer-mobile-contact { display: none; }
@@ -156,7 +156,9 @@ const Footer = ({ className }) => {
             <ul className="flex flex-col gap-4">
               {socials.map(({ label, href }) => (
                 <li key={label}>
-                  <a href={href} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-[13px] font-medium">{label}</a>
+                  <a href={href} target="_blank" rel="noopener noreferrer"
+                    aria-label={`ReachX Group on ${label}`}
+                    className="text-gray-400 hover:text-white transition-colors text-[13px] font-medium">{label}</a>
                 </li>
               ))}
             </ul>
@@ -192,6 +194,7 @@ const Footer = ({ className }) => {
         <div className="flex md:hidden gap-3 mt-10 flex-wrap">
           {socials.map(({ label, href, Icon }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer"
+              aria-label={`ReachX Group on ${label}`}
               style={{
                 display: 'flex', alignItems: 'center', gap: 8,
                 background: 'rgba(255,255,255,0.06)',
@@ -229,6 +232,7 @@ const Footer = ({ className }) => {
 
           {socials.slice(0, 4).map(({ label, href, Icon }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer"
+              aria-label={`ReachX Group on ${label}`}
               className="flex items-center justify-between px-4 py-5 hover:bg-white/5 transition-colors h-full last:pr-12"
             >
               <span className="text-white">{label.toUpperCase()}</span>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.reachxgroup.com/sitemap.xml
+Sitemap: https://reachxgroup.com/sitemap.xml

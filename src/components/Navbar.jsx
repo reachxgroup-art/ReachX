@@ -72,7 +72,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-8 py-5">
       {/* Logo */}
       <a href="#home" onClick={(e) => handleNavClick(e, "#home")} className="flex items-center gap-2">
-        <img className="h-15 rounded-full" src="/logo/image.png" alt="" />
+        <img className="h-15 rounded-full" src="/logo/image.png" alt="ReachX Group Logo" />
       </a>
 
       {/* Desktop Pill Nav */}
@@ -172,7 +172,7 @@ const Navbar = () => {
         >
           {/* Header row */}
           <div className="flex items-center justify-between px-5 pt-5 pb-3">
-            <img className="h-10 rounded-full" src="/logo/image.png" alt="" />
+            <img className="h-10 rounded-full" src="/logo/image.png" alt="ReachX Group Logo" />
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center rounded-full"

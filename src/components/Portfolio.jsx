@@ -249,7 +249,8 @@ const Portfolio = ({ className }) => {
               >
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} — ${project.category} project by ReachX Group`}
+                  loading="lazy"
                   className="pf-img absolute inset-0 w-full h-full object-cover"
                 />
 

@@ -99,7 +99,7 @@ const About = ({ className }) => {
               <div className="absolute bottom-0 right-0 w-16 h-16 bg-brand-primary/5 rounded-tl-[40px]" /> */}
               <img
                 src="/logo/tree.png"
-                alt="ReachX Group Structure"
+                alt="ReachX Group company structure — web development, 3D animation, AI/ML and IT consulting services"
                 loading="lazy"
                 className="relative w-full h-full object-contain p-6 z-10"
               />
@@ -129,7 +129,7 @@ const About = ({ className }) => {
             <div className="relative w-full" style={{ aspectRatio: '9/16', maxHeight: '300px' }}>
               <img
                 src="/logo/profilepic.png"
-                alt="Founder - Subrata Haldar"
+                alt="Subrata Haldar — Founder and Director of ReachX Group"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
@@ -190,7 +190,7 @@ const About = ({ className }) => {
             <div className="bg-gradient-to-br from-[#EDF5FF] to-[#F0F8FF] flex items-center justify-center min-h-[280px]">
               <img
                 src="/logo/tree.png"
-                alt="ReachX Group Structure"
+                alt="ReachX Group company structure — web development, 3D animation, AI/ML and IT consulting services"
                 loading="lazy"
                 className="w-full h-full object-contain p-6 max-h-[320px]"
               />
@@ -239,7 +239,7 @@ const About = ({ className }) => {
               <div className="shrink-0 w-[180px] flex flex-col bg-gradient-to-br from-[#EDF5FF] to-[#F0F8FF]">
                 <img
                   src="/logo/profilepic.png"
-                  alt="Founder - Subrata Haldar"
+                  alt="Subrata Haldar — Founder and Director of ReachX Group"
                   loading="lazy"
                   className="w-full h-auto object-contain"
                   style={{ display: 'block', flex: '1' }}
@@ -294,13 +294,13 @@ const About = ({ className }) => {
 
           {/* Tree image — full width, fixed aspect ratio, never cropped */}
           <div className="w-full rounded-2xl overflow-hidden border border-slate-100 bg-gradient-to-br from-[#EDF5FF] to-[#F0F8FF]">
-            <img
-              src="/logo/tree.png"
-              alt="ReachX Group Structure"
-              loading="lazy"
-              className="w-full h-auto object-contain p-4"
-              style={{ display: 'block' }}
-            />
+              <img
+                src="/logo/tree.png"
+                alt="ReachX Group company structure diagram featuring web development, 3D animation, AI/ML and IT consulting service branches"
+                loading="lazy"
+                className="w-full h-auto object-contain p-4"
+                style={{ display: 'block' }}
+              />
           </div>
 
           {/* Body */}
@@ -346,7 +346,7 @@ const About = ({ className }) => {
             <div className="w-full bg-gradient-to-br from-[#EDF5FF] to-[#F0F8FF]">
               <img
                 src="/logo/profilepic.png"
-                alt="Founder - Subrata Haldar"
+                alt="Subrata Haldar — Founder and Director of ReachX Group"
                 loading="lazy"
                 className="w-full h-auto object-cover"
                 style={{ display: 'block', maxHeight: '320px' }}

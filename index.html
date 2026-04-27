@@ -14,10 +14,10 @@
     content="ReachX Group is a global digital agency offering web development, 3D animation, UI/UX design, AI/ML solutions, game development, branding, and marketing strategies." />
 
   <meta name="keywords"
-    content="web development company in Kolkata, 3D animation, 3D walkthrough, UI UX design, AI ML services, game development, product visualization, branding strategy, marketing agency" />
+    content="reachx group, web development company in Kolkata, 3D animation, 3D walkthrough, 3D videos, virtual tour, UI UX design, AI ML services, game development, IT consultation, product visualization, branding strategy, marketing agency" />
 
   <meta name="author" content="ReachX Group" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://reachxgroup.com/" />
@@ -27,11 +27,16 @@
 
   <!-- Open Graph (Facebook / LinkedIn) -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ReachX Group" />
+  <meta property="og:locale" content="en_IN" />
   <meta property="og:title" content="ReachX Group - Digital Solutions Worldwide" />
   <meta property="og:description"
     content="We build high-performance websites, 3D experiences, AI solutions, and powerful brand strategies." />
   <meta property="og:url" content="https://reachxgroup.com/" />
   <meta property="og:image" content="https://reachxgroup.com/preview.png" />
+  <meta property="og:image:alt" content="ReachX Group — Digital Solutions Agency" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -39,54 +44,109 @@
   <meta name="twitter:description"
     content="Global digital agency offering web development, 3D visualization, AI/ML, UI/UX, and branding services." />
   <meta name="twitter:image" content="https://reachxgroup.com/preview.png" />
+  <meta name="twitter:image:alt" content="ReachX Group — Digital Solutions Agency" />
 
   <!-- Theme -->
   <meta name="theme-color" content="#0f172a" />
 
+  <!-- DNS Prefetch for external resources -->
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://ui-avatars.com" />
+  <link rel="dns-prefetch" href="https://reachxmarketplace.onrender.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
   <!-- Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload critical assets -->
+  <link rel="preload" href="/logo/image.png" as="image" />
 
   <!-- Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <!-- Structured Data (SEO BOOST) -->
+  <!-- Structured Data — Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://reachxgroup.com/#organization",
     "name": "ReachX Group",
     "url": "https://reachxgroup.com",
-    "logo": "https://reachxgroup.com/logo.png",
-    "description": "Global digital agency specializing in web development, 3D animation, AI/ML, UI/UX design, and branding.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://reachxgroup.com/logo/image.png",
+      "width": 200,
+      "height": 200
+    },
+    "description": "Global digital agency specializing in web development, 3D animation, AI/ML, UI/UX design, game development, virtual tours, and branding.",
+    "email": "reachxgroup@gmail.com",
+    "telephone": "+919123855424",
     "sameAs": [
-      "https://www.linkedin.com/",
-      "https://www.instagram.com/",
-      "https://twitter.com/"
-    ]
+      "https://instagram.com/reachxgroup",
+      "https://linkedin.com/company/reachxgroup",
+      "https://youtube.com/@reachxgroup",
+      "https://www.facebook.com/share/18eMz8GpH8/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+919123855424",
+      "email": "reachxgroup@gmail.com",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Hindi"]
+    }
   }
   </script>
 
-  <!-- Local Business Schema (Even for global trust signals) -->
+  <!-- Structured Data — ProfessionalService -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ReachX Group",
-    "image": "https://reachxgroup.com/logo.png",
+    "image": "https://reachxgroup.com/logo/image.png",
     "url": "https://reachxgroup.com",
-    "telephone": "+91-XXXXXXXXXX",
+    "telephone": "+919123855424",
+    "email": "reachxgroup@gmail.com",
     "areaServed": "Worldwide",
+    "priceRange": "$$",
     "serviceType": [
       "Web Development",
       "3D Animation",
+      "3D Videos",
+      "360 Virtual Tour",
       "UI/UX Design",
       "AI/ML Solutions",
       "Game Development",
+      "IT Consultation",
       "Branding & Marketing"
     ]
+  }
+  </script>
+
+  <!-- Structured Data — WebSite with SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://reachxgroup.com/#website",
+    "name": "ReachX Group",
+    "url": "https://reachxgroup.com",
+    "description": "Web development, 3D animation, AI/ML, UI/UX design, game development, and branding services by ReachX Group.",
+    "publisher": {
+      "@id": "https://reachxgroup.com/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://reachxgroup.com/?s={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 
@@ -94,7 +154,13 @@
 
 <body>
   <!-- Root App -->
-  <div id="root"></div>
+  <div id="root">
+    <!-- SEO fallback for crawlers without JavaScript -->
+    <noscript>
+      <h1>ReachX Group — Web Development Company in Kolkata</h1>
+      <p>ReachX Group is a global digital agency offering web development, 3D animation, UI/UX design, AI/ML solutions, game development, virtual tours, IT consultation, and branding strategies. Contact us at reachxgroup@gmail.com or call +91 9123855424.</p>
+    </noscript>
+  </div>
 
   <!-- React Entry -->
   <script type="module" src="/src/main.jsx"></script>

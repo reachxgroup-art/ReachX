@@ -101,6 +101,8 @@ const Hero = ({ className }) => {
       <video
         key={currentService.video}
         autoPlay loop muted playsInline
+        preload="metadata"
+        aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover z-0 opacity-80"
       >
         <source src={currentService.video} type="video/mp4" />
@@ -212,7 +214,7 @@ const Hero = ({ className }) => {
             className="scroll-bounce flex-shrink-0 flex flex-col items-center gap-1"
             style={{ opacity: 0.6 }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="12" y1="5" x2="12" y2="19" />
               <polyline points="19 12 12 19 5 12" />
             </svg>

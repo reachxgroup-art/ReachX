@@ -218,7 +218,7 @@ const Testimonials = ({ className }) => {
                     }}>
                       <img
                         src={logoUrl}
-                        alt={`Client ${index + 1}`}
+                        alt={`Trusted client of ReachX Group`}
                         style={{ width: '80%', height: '80%', objectFit: 'contain', opacity: 0.9 }}
                       />
                     </div>
@@ -266,8 +266,8 @@ const Testimonials = ({ className }) => {
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                       margin: '0 auto',
                     }}>
-                      <img src={logoUrl} alt={`Client ${i + 1}`}
-                        style={{ width: '82%', height: '82%', objectFit: 'contain', opacity: 0.9 }} />
+                      <img src={logoUrl} alt={`Trusted client of ReachX Group`}
+                      style={{ width: '82%', height: '82%', objectFit: 'contain', opacity: 0.9 }} />
                     </div>
                   </div>
                 ))}
