@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0EA5E9;
+  /* Sky Blue */
+  --color-brand-secondary: #0284C7;
+  /* Deeper Blue */
+  --color-brand-dark: #111111;
+  /* Black */
+  --color-brand-surface: #FFFFFF;
+  /* White */
+  --color-brand-surface-alt: #F8F9FA;
+  --color-brand-surface-dark: #1A1A1A;
+  --color-brand-accent: #0EA5E9;
+  /* Replacing red with Sky Blue for corporate feel */
+
+  /* Switch fonts to premium formal corporate look */
+  --font-sans: "Inter", "Roboto", system-ui, sans-serif;
+  --font-heading: "Inter", "Roboto", system-ui, sans-serif;
+
+  --shadow-glass: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  --shadow-premium: 0 20px 50px -12px rgba(14, 165, 233, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: initial;
+    /* Lenis handles smooth scroll */
+  }
+
+  body {
+    @apply bg-brand-surface text-brand-dark overflow-x-hidden antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-white/70 border border-slate-200/50 shadow-glass;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-xl bg-black/80 border border-white/10 shadow-premium text-white;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-blue-600;
+  }
+
+  /* Outline Text Effect (Azurio Signature) */
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(17, 17, 17, 0.2);
+    @apply font-heading;
+  }
+
+  .text-outline-dark {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    @apply font-heading;
+  }
+
+  .text-outline:hover {
+    color: #111111;
+    -webkit-text-stroke: 1px #111111;
+    transition: all 0.3s ease;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-move 8s ease infinite;
+  }
+
+  /* GSAP initial states */
+  .gsap-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  /* Lenis scroll classes */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Custom Scrollbar - Subdued */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cdcdcd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+@font-face {
+  font-family: 'Font1';
+  src: url('/fonts/1.otf');
+}
+
+@font-face {
+  font-family: 'Font2';
+  src: url('/fonts/2.otf');
+}
+
+@font-face {
+  font-family: 'Font3';
+  src: url('/fonts/3.otf');
+}
+
+@font-face {
+  font-family: 'Font4';
+  src: url('/fonts/4.otf');
+}
+
+@font-face {
+  font-family: 'Font5';
+  src: url('/fonts/5.otf');
+}
+
+@font-face {
+  font-family: 'Font6';
+  src: url('/fonts/6.otf');
+}
