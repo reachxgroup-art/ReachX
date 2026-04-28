@@ -54,7 +54,7 @@
   ],
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/:path((?!assets|fonts|logo|videos|_next|favicon|robots\\.txt|sitemap\\.xml).*)*",
       "has": [{ "type": "host", "value": "www.reachxgroup.com" }],
       "destination": "https://reachxgroup.com/:path*",
       "permanent": true
