@@ -31,9 +31,9 @@
   ],
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "has": [{ "type": "host", "value": "www.reachxgroup.com" }],
-      "destination": "https://reachxgroup.com/$1",
+      "destination": "https://reachxgroup.com/:path*",
       "permanent": true
     }
   ]
