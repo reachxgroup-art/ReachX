@@ -33,6 +33,9 @@
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.reachxgroup.com" }],
+      "missing": [
+        { "type": "header", "key": "x-vercel-skip-redirect" }
+      ],
       "destination": "https://reachxgroup.com/:path*",
       "permanent": true
     }
